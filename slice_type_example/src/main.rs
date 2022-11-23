@@ -4,7 +4,7 @@ fn main() {
 
     let word = first_word(&s);
 
-    println!("{}", word);
+    println!("The first word is: {}", word);
 
     s.clear();
     
