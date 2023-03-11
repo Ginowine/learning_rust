@@ -4,4 +4,11 @@ fn main() {
     for i in &v {
         println!("{i}");
     }
+
+    // Iterating over mutable vector and adding some values to each element
+    let mut v = vec![100, 32, 57];
+    for i in &mut v {
+        *i += 50;
+        println!("{i}");
+    }
 }
