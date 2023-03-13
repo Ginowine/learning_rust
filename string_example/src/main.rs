@@ -1,3 +1,5 @@
+use std::fmt::format;
+
 fn main() {
     let data = "initial content";
     let s = data.to_string();
@@ -20,4 +22,36 @@ fn main() {
     s1.push_str(s2);
 
     println!("s1 is {s1}");
+
+    // Appending a charatcer to a string
+    let mut s = String::from("lo");
+    s.push('l');
+    println!("{s}");
+
+    // concatenating two strings
+    let s1 = String::from("Gino");
+    let s2 = String::from("wine");
+
+    let s3 = s1 + &s2;
+    println!("{s3}");
+
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+
+    //let s = s1 + "-" + &s2 + "-" + &s3;
+
+    let s = format!("{s1}-{s2}-{s3}");
+    println!("{s}");
+
+    // Slicing strings using range
+    let hello = "Здравствуйте";
+    let s = &hello[0..4];
+
+    println!("{s}");
+
+    // Iterating over a string
+        for c in "Ginowine".chars() {
+        println!("{c}");
+    }
 }
