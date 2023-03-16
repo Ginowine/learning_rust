@@ -10,6 +10,7 @@ fn main() {
 
     let score = scores.get(&team_name).copied().unwrap_or(0);
 
+    // Looping through a HashMap
     println!("{score}");
 
     for (key, value) in scores {
@@ -21,5 +22,12 @@ fn main() {
 
     let mut map = HashMap::new();
     map.insert(field_name, field_value);
+
+    // updating value in a HashMap
+    let mut scores_one = HashMap::new();
+    scores_one.insert(String::from("Blue"), 10);
+    scores_one.insert(String::from("Blue"), 25);
+
+    println!("{:?}", scores_one);
 
 }
