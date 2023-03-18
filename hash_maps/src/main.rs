@@ -40,5 +40,4 @@ fn main() {
 
     println!("{:?}", scores);
 
-
 }
